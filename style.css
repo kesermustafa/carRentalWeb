@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    --bg-color: #e7e5e5;
+}
+
+:root {
+    --main-color: orangered;
+    --second-color: orange;
+    --text-color: #3c3e41;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--bg-color);
+    padding: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+header img {
+    width: 40px;
+    cursor: pointer;
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar li {
+    list-style-type: none;
+}
+
+.navbar a {
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.navbar a:hover {
+    color: var(--main-color);
+    transition: 0.5s;
+}
+
+.header-btn a {
+    background-color: var(--main-color);
+    padding: 5px 10px;
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.header-btn a:hover {
+    background-color: var(--second-color);
+    transition: .5s;
+    color: var(--text-color);
+    border: 1px solid var(--main-color);
+}
+
+@media screen and (max-width:650px){
+
+    .header-btn{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+}
