@@ -20,7 +20,7 @@ header {
     align-items: center;
     background-color: var(--bg-color);
     padding: 10px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    box-shadow: rgba(50, 50, 93, 0.25) 0 50px 100px -20px, rgba(0, 0, 0, 0.3) 0 30px 60px -30px, rgba(10, 37, 64, 0.35) 0 -2px 6px 0 inset;
 }
 
 header img {
@@ -85,8 +85,7 @@ header img {
 /* HOME */
 
 .home{
-    background: url("/images/CarBackground.png");
-    background-position: center;
+    background: url("/images/CarBackground.png") center;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
@@ -109,9 +108,8 @@ header img {
 }
 
 .text p{
-    margin: 15px 0;
-    margin-right: 15px;
-    letter-spacing: 1.2px;
+    margin: 15px 15px 15px 0;
+    letter-spacing: 0.1rem;
     line-height: 1.5rem;
 }
 
