@@ -357,6 +357,9 @@ header img {
     border-radius: 50% ;
 }
 
+.reviews-container{
+    margin: 15px;
+}
 .reviews-container .box{
     display: flex;
     flex-direction: column;
@@ -382,10 +385,107 @@ header img {
     color: gold;
 }
 
+.newsletter{
+    background: linear-gradient(orangered, orange);
+    margin-top: 40px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.newsletter h2{
+    color: var(--text-color);
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.newsletter .mailto{
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.newsletter .mailto input{
+    border: none;
+    outline: none;
+    text-align: center;
+    margin: 10px 0;
+    background-color: rgba(128, 128, 128, 0.54);
+    border-radius: 10px;
+    padding: 8px 10px;
+
+}
 
 
+.newsletter .mailto a{
+    text-decoration: none;
+    background-color: orangered;
+    color: white;
+    border-radius: 10px;
+    padding: 5px 15px;
+}
+
+.newsletter .mailto a:hover{
+    scale: 1.03;
+    transition: .5s;
+    background-color: orange;
+    color: #3c3e41;
+}
+
+.copyright{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: orangered;
+    color: #fff;
+    border-top: 1px solid #fff;
+    padding: 20px;
+}
+
+.copyright a{
+    color: #fff;
+    text-decoration: none;
+    font-style: italic;
+}
+
+.copyright .social i{
+    font-size: 25px;
+    color: #3c3e41; padding: 5px;
+}
+
+.copyright .social i:hover{
+    color: #ffffff;
+    transition: 0.3s;
+}
 
 
+.mail-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    margin-top: 50px;
+}
+
+.mail-box h3{
+    color: #4f4e4e;
+    margin: 5px;
+}
+
+.mail-box span{
+    color: green;
+}
+
+.mail-box i{
+    font-size: 50px;
+    color: green;
+}
 
 
 @media screen and (max-width: 700px){
@@ -425,6 +525,27 @@ header img {
     .about-img img{
         width: 100%;
     }
+
+
+    .reviews-container {
+        flex-direction: column;
+        margin: 10px;
+    }
+
+    .copyright{
+        flex-direction: column;
+        justify-content: space-between;
+        border-bottom: 2px solid white;
+    }
+
+    .copyright p{
+        margin-bottom: 15px;
+        font-size: 0.9rem;
+        text-align: center;
+    }
+
+
+
 }
 
 @media screen and (max-width: 1020px){
@@ -545,6 +666,27 @@ header img {
         font-size: 1.5rem;
     }
 
+
+    .reviews-container {
+        flex-direction: column;
+        margin: 10px;
+    }
+
+    .copyright{
+        flex-direction: column;
+        justify-content: space-between;
+        border-bottom: 2px solid white;
+    }
+
+    .copyright p{
+        margin-bottom: 15px;
+        font-size: 0.9rem;
+        text-align: center;
+    }
+
+
+
+
 }
 
 @media screen and (max-width: 420px) {
@@ -567,4 +709,22 @@ header img {
         left: 0;
         right: 10px;
     }
+
+    .reviews-container {
+        flex-direction: column;
+        margin: 10px;
+    }
+
+    .copyright{
+        flex-direction: column;
+        justify-content: space-between;
+        border-bottom: 2px solid white;
+    }
+
+    .copyright p{
+        margin-bottom: 15px;
+        font-size: 0.9rem;
+        text-align: center;
+    }
+
 }
